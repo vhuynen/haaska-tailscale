@@ -1,0 +1,5 @@
+{
+  "debug": false,
+  "ssl_verify": false,
+  "ssl_client": []
+}
