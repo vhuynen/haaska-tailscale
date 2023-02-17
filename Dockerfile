@@ -1,7 +1,7 @@
 FROM python:3.6-buster as builder
 WORKDIR /app
 COPY ./haaska/haaska.py .
-COPY ./haaska/config/config.json.sample ./config.json
+COPY config.json .
 RUN pip install -t . requests pysocks awslambdaric
 
 FROM alpine:latest as tailscale
